@@ -1,0 +1,122 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-size: 1rem;
+  background-color: #f5f5f5;
+}
+h1{
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.page-container{
+  max-width: 50%;
+  margin: 0 auto;
+  /* border: 2px solid red; */
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  /* box-shadow: 0.5px 0.5px 2px 1px rgba(138,136,138,0.69); */
+  box-shadow: 0px 2px 20px rgba(0,0,0,0.075);
+}
+
+.page-container .notify-title{
+  display: flex;
+  justify-content: space-between;
+  /* border: 2px solid red; */
+  padding: 1rem 2rem;
+}
+.page-container .notify-details{
+  height: 90%;
+  /* border: 2px solid blue; */
+  padding: 0 2rem;
+}
+
+.notify-details .notify-msg-unread{
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 8px;
+  background-color: hsl(210, 60%, 98%);
+  margin: 5px 0;
+}
+.notify-details .notify-msg-read{
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 8px;
+  background-color: hsl(0, 0%, 100%);
+  margin: 5px 0;
+}
+.notify-msg .notify-img{
+  width: 8%;
+  height:8%;
+  margin-right: 1rem;
+}
+.notify-msg img{
+  object-fit: cover;
+  width: 100%;
+  height:100%;
+}
+.profile-name{
+  font-weight: 800;
+}
+.notify-time{
+  font-size: 0.8rem;
+  color: hsl(0, 0%, 50%);
+}
+.notify-reaction{
+  color: hsl(0, 0%, 50%);
+  font-weight: 500;
+}
+.notify-private-msg .private-msg{
+  padding: 15px 20px;
+  border: 1px solid rgb(185, 182, 182);
+  width: 85%;
+  margin-left: 4.8rem;
+  color: hsl(0, 1%, 35%);
+  font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  .page-container{
+    max-width: 95%;
+    height: 100%;
+  }
+  .page-container .notify-details{
+    height: 90%;
+    padding: 0 1em;
+  }
+  .page-container .notify-title{
+    padding: 1rem;
+  }
+  .notify-msg .notify-img{
+    width: 20%;
+    height:20%;
+    border-radius: 50%;
+  }
+  .notify-private-msg .private-msg{
+    padding: 10px 15px;
+    width: 85%;
+    margin-left: 3.5rem;
+  }
+  
+}
+
+@media screen and (max-width: 425px) {
+    body{
+    font-size: 0.6rem;
+  }
+  h1{
+    font-size: 1rem;
+  }
+  .notify-msg .notify-img{
+    width: 25%;
+    height:25%;
+    border-radius: 50%;
+  }
+  
+}
