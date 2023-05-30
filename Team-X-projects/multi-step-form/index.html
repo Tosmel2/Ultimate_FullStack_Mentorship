@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/dist/globals-output.css">
+  
+  <title>Home | Multi-step form</title>
+</head>
+<body>
+  <!-- <img src="./assets/images/bg-sidebar-mobile.svg" alt=""> -->
+  <main class="main-container min-h-screen bg-blue-50 md:flex">
+    <header class="top-header mx-auto md:w-[25%] md:mx-0 md:h-screen">
+      <div style="background-image: url('./assets/images/bg-sidebar-mobile.svg');" class="h-56 md:h-full overflow-hidden flex justify-center bg-cover bg-center">
+        <ul class="list-none h-[30%] mt-6 md:mt-10 w-[55%] md:flex-col flex justify-between">
+          <li class="flex items-center md:my-5 cursor-pointer mr-2">
+            <div class="outline outline-2 outline-white rounded-full h-10 w-10 flex items-center justify-center text-white font-bold cursor-pointer">1</div>
+            <span class="hidden md:block ml-5 text-gray-400 font-semibold">STEP 1 <br><span class="text-white font-bold">YOUR INFO</span></span>
+
+          </li>
+          <li class="flex items-center md:my-5 cursor-pointer mr-2">
+            <div class="outline outline-2 outline-white rounded-full h-10 w-10 flex items-center justify-center text-white font-bold ">2</div>
+            <span class="hidden md:block ml-3 text-gray-400 font-semibold">STEP 2 <br><span class="text-white font-bold">SELECT PLAN</span></span>
+
+          </li>
+          <li class="flex items-center md:my-5 cursor-pointer mr-2">
+            <div class="outline outline-2 outline-white rounded-full h-10 w-10 flex items-center justify-center text-white font-bold">3</div>
+            <span class="hidden md:block ml-5 text-gray-400 font-semibold">STEP 3 <br><span class="text-white font-bold">ADD-ONS</span></span>
+          </li>
+          <li class="flex items-center md:my-5 cursor-pointer mr-2">
+            <div class="outline outline-2 outline-white rounded-full h-10 w-10 flex items-center justify-center text-white font-bold">4</div>
+            <span class="hidden md:block ml-5 text-gray-400 font-semibold">STEP 4 <br><span class="text-white font-bold">SUMMARY</span></span>
+          </li>
+        </ul>
+      </div>
+    </header>
+    
+     <!-- ==============option 2 page card (mobile-design-step-2-yearly)================= -->
+    <!-- <div class="flex justify-center items-center relative">
+      <div class="card bg-white w-[90%] rounded-lg h-[70vh] md:h-[65vh] absolute -top-20 shadow-xl z-1 p-8 md:px-14 md:py-10 md:w-[60%]">
+        <h2 class="font-bold text-2xl mb-2">Select your plan</h2>
+        <p class="text-gray-400 font-semibold mb-2">You have the option of monthly or yearly plan</p>
+
+        <div class="h-[85%]">
+          <div class="md:h-[20%] border-solid border border-slate-300 rounded-md p-4 mt-2 md:mb-2 flex items-center">
+            <img src="./assets/images/icon-arcade.svg" class="mr-5" alt="">
+            <div class="text-left">
+              <h3 class="font-semibold md:font-medium md:text-sm text-md text-slate-700">Online service</h3>
+              <p class="text-gray-400 md:text-sm">Access to multiplayer games</p>
+              <p class="md:text-sm">+$2/mo</p>
+            </div>
+          </div>
+
+          <div class="md:h-[22%] border-solid border border-slate-300 rounded-md p-4 mt-3 md:mb-2 flex items-center">
+            <img src="./assets/images/icon-advanced.svg" class="mr-5" alt="">
+            <div class="text-left">
+              <h3 class="font-semibold md:font-medium md:text-sm text-md text-slate-700">Larger storage</h3>
+              <p class="text-gray-400 md:text-sm">Extra 1TB of cloud save</p>
+              <p class="md:text-sm">+$2/mo</p>
+            </div>
+          </div>
+
+          <div class="md:h-[20%] border-solid border border-slate-300 rounded-md p-4 mt-3 md:mb-2 flex items-center">
+            <img src="./assets/images/icon-pro.svg" class="mr-5" alt="">
+            <div class="text-left">
+              <h3 class="font-semibold md:font-medium md:text-sm text-md text-slate-700">Customizable Profile</h3>
+              <p class="text-gray-400 md:text-sm">Custom theme on your profile</p>
+              <p class="md:text-sm">+$2/mo</p>
+            </div>
+          </div>
+          <div class="md:h-[20%] duration-toggle bg-slate-100 px-10 md:px-6 rounded-lg cursor-pointer py-4 flex justify-between items-center mt-8 md:mt-4">
+            <p class="font-bold">Monthly</p>
+            <i class="fa-solid fa-toggle-on text-2xl"></i>
+            <p class="font-bold text-gray-400">Yearly</p>
+          </div>
+        </div>
+        
+      </div>
+    </div> -->
+
+    <section class="flex justify-center items-center relative md:w-[75%]">
+      <div class="md:w-full w-[90%] mx-auto">
+        <div class="card bg-white w-[90%] md:w-full rounded-lg h-[min-80vh] absolute -top-20 shadow-xl z-1 md:z-0 overflow-y-hidden p-3 md:h-full md:-top-0">
+          <div class="md:w-[60%] md:mx-auto md:mt-10 h-full">
+            <div class="h-[25%] mb-4 md:mb-0 md:flex md:flex-col md:justify-center">
+              <h2 class="font-bold text-xl md:text-2xl">Select your plan</h2>
+              <p class="text-gray-400 font-semibold">
+                You have the option of monthly or yearly plan.
+              </p>
+            </div>
+            
+            <div class="h-[60%] md:flex md:flex-wrap md:justify-between">
+              <div class="md:w-[32%] md:h-[45%] border-solid border border-slate-300 rounded-md p-4 mt-2 md:mt-0 md:mb-2 flex items-center md:flex-col md:items-start md:justify-between">
+                <img src="./assets/images/icon-arcade.svg" class="mr-5 md:mb-4" alt="">
+                <div class="text-left">
+                  <h3 class="font-semibold md:font-medium md:text-sm text-md text-slate-700">Online service</h3>
+                  <p class="text-gray-400 md:text-sm">Access to multiplayer games</p>
+                  <p class="md:text-sm theprice">+$2/mo</p>
+                </div>
+              </div>
+    
+              <div class="md:w-[32%] md:h-[45%] border-solid border border-slate-300 rounded-md p-4 mt-2 md:mt-0 md:mb-2 flex items-center md:flex-col md:items-start md:justify-between">
+                <img src="./assets/images/icon-advanced.svg" class="mr-5 md:mb-4" alt="">
+                <div class="text-left">
+                  <h3 class="font-semibold md:font-medium md:text-sm text-md text-slate-700">Larger storage</h3>
+                  <p class="text-gray-400 md:text-sm">Extra 1TB of cloud save</p>
+                  <p class="md:text-sm theprice">+$2/mo</p>
+                </div>
+              </div>
+    
+              <div class="md:w-[32%] md:h-[45%] border-solid border border-slate-300 rounded-md p-4 mt-2 md:mt-0 md:mb-2 flex items-center md:flex-col md:items-start md:justify-between">
+                <img src="./assets/images/icon-pro.svg" class="mr-5 md:mb-4" alt="">
+                <div class="text-left">
+                  <h3 class="font-semibold md:font-medium md:text-sm text-md text-slate-700">Customizable Profile</h3>
+                  <p class="text-gray-400 md:text-sm">Custom theme on your profile</p>
+                  <p class="md:text-sm theprice">+$2/mo</p>
+                </div>
+              </div>
+              <div class="md:h-[15%] md:w-full duration-toggle toggle-box bg-slate-100 px-10 md:px-6 rounded-lg cursor-pointer py-4 flex justify-between items-center mt-8 md:mt-0">
+                <p class="font-bold themonthpara">Monthly</p>
+                <i class="fa-solid fa-toggle-off tog-icon text-2xl"></i>
+                <p class="font-bold text-gray-400 theyearpara">Yearly</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <div class="paging flex justify-between items-center bg-white absolute bottom-0 right-0 w-full md:w-[75%] p-6 py-8 h-10 md:px-14">
+      <a href="/" class="text-gray-400 font-semibold">Go Back</a>
+      <a href="/" class="p-2 px-4 bg-blue-900 text-white font-semibold rounded-md">Next Step</a>
+    </div>
+
+    <!-- ==========option 3 page card (mobile-design-step-3-monthly and Desktop Preview))========== -->
+    <!-- <section class="flex justify-center items-center relative md:w-[75%]">
+      <div class="md:w-full w-[90%] mx-auto">
+        <div class="card bg-white w-[90%] md:w-full rounded-lg h-[min-80vh] absolute -top-20 shadow-xl z-1 md:z-0 overflow-y-hidden p-3 md:h-full md:-top-0">
+          <div class="md:w-[60%] md:mx-auto md:mt-10 h-full">
+            <div class="h-[25%] mb-4 md:mb-0 md:flex md:flex-col md:justify-center">
+              <h2 class="font-bold text-xl md:text-2xl">Finishing up</h2>
+              <p class="text-gray-400 font-semibold">
+                Double-check everything looks OK before confirming.
+              </p>
+            </div>
+            
+            <div class="h-[75%]">
+              <div class="checkbox-container border-solid border border-slate-300 focus:ring-2 focus:ring-blue-500 rounded-md p-3 mt-3 md:mt-2 flex justify-between items-center cursor-pointer">
+                <input type="checkbox" class="cursor-pointer checked:bg-blue-500 ..."/>
+                <div class="w-[70%] text-left flex flex-col items-center">
+                  <h3 class="font-semibold text-md text-slate-700">Online service</h3>
+                  <p class="text-gray-400">Access to multiplayer games</p>
+                </div>
+                <p>+$2/mo</p>
+              </div>
+    
+              <div class="checkbox-container border-solid border border-slate-300 focus:ring-2 focus:ring-blue-500 rounded-md p-3 mt-3 md:mt-2 flex justify-between items-center cursor-pointer">
+                <input type="checkbox" class="cursor-pointer checked:bg-blue-500 ..."/>
+                <div class="w-[70%] text-left flex flex-col items-center">
+                  <h3 class="font-semibold text-md text-slate-700">Larger storage</h3>
+                  <p class="text-gray-400">Extra 1TB of cloud save</p>
+                </div>
+                <p>+$2/mo</p>
+              </div>
+    
+              <div class="checkbox-container border-solid border border-slate-300 focus:ring-2 focus:ring-blue-500 rounded-md p-3 mt-3 md:mt-2 flex justify-between items-center cursor-pointer">
+                <input type="checkbox" class="cursor-pointer checked:bg-blue-500 ..."/>
+                <div class="w-[70%] text-left flex flex-col items-center">
+                  <h3 class="font-semibold text-md text-slate-700">Customizable Profile</h3>
+                  <p class="text-gray-400">Custom theme on your profile</p>
+                </div>
+                <p>+$2/mo</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <div class="paging flex justify-between items-center bg-white absolute bottom-0 right-0 w-full md:w-[75%] p-6 py-8 h-10 md:px-14">
+      <a href="/" class="text-gray-400 font-semibold">Go Back</a>
+      <a href="/" class="p-2 px-4 bg-blue-700 text-white font-semibold rounded-md">Confirm</a>
+    </div> -->
+
+
+    <!-- ============option 4 page card (mobile-design-step-5 and Desktop Preview))=============== -->
+    <!-- <section class="flex justify-center items-center relative md:w-[75%]">
+      <div class="card bg-white w-[90%] rounded-lg md:rounded-none h-[60vh] md:h-full absolute -top-20 md:-top-0 shadow-xl z-1 p-4 md:px-56 md:py-10 md:w-full flex items-center text-center justify-center">
+        <div class="flex flex-col items-center text-center justify-center">
+          <img src="./assets/images/icon-thank-you.svg" alt="">
+          <h2 class="font-bold text-2xl my-5">Thank you!</h2>
+          <p class="text-slate-400 font-semibold text-lg">
+            Thanks for confirming your subscription! We hope you have fun 
+            using our platform. If you ever need support, please feel free 
+            to email us at support@loremgaming.com.
+          </p>
+        </div>      
+      </div>
+    </section> -->
+
+    <!-- =========option 4 page card (mobile-design-step-4-yearly and Desktop Preview)============ -->
+    <!-- <section class="flex justify-center items-center relative md:w-[75%]">
+      <div class="md:w-full w-[90%] mx-auto">
+        <div class="card bg-white w-[90%] md:w-full rounded-lg h-[min-80vh] absolute -top-20 shadow-xl z-1 md:z-0 overflow-y-hidden p-3 md:h-full md:-top-0">
+          <div class="md:w-[60%] md:mx-auto md:mt-10 h-full">
+            <div class="h-[25%] mb-4 md:mb-0 md:flex md:flex-col md:justify-center">
+              <h2 class="font-bold text-xl md:text-2xl">Finishing up</h2>
+              <p class="text-gray-400 font-semibold">
+                Double-check everything looks OK before confirming.
+              </p>
+            </div>
+            
+            <div class="h-[75%]">
+
+              <div class="bg-slate-100 rounded-md px-3">
+                <div class="border-solid border-b-2 border-slate-300 p-3 mt-3 md:mt-2 flex justify-between items-center">
+    
+                  <div class="w-[70%] text-left">
+                    <h3 class="font-semibold text-md text-slate-700">Arcade(Monthly)</h3>
+                    <a href="/" class="text-gray-400 underline">Change</a>
+                  </div>
+                  <p class="font-bold text-slate-800">+$2/mo</p>
+                </div>
+      
+                <div class="p-3">
+                    <div class="text-left p-1 flex justify-between items-center">
+                      <h3 class="font-semibold text-md text-gray-400">Larger storage</h3>
+                      <p class="font-bold text-slate-600">+$2/mo</p>
+                    </div>
+      
+                    <div class="text-left p-1 flex justify-between items-center">
+                      <h3 class="font-semibold text-md text-gray-400">Customizable Profile</h3>
+                      <p class="font-bold text-slate-600">+$2/mo</p>
+                    </div>
+                </div>
+              </div>
+              <div class="text-left p-3 mt-3 px-8 flex justify-between items-center">
+                <h3 class="font-semibold text-md text-gray-400">Total (per month)</h3>
+                <p class="font-bold text-blue-800">+$12/mo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <div class="paging flex justify-between items-center bg-white absolute bottom-0 right-0 w-full md:w-[75%] p-6 py-8 h-10 md:px-14">
+      <a href="/" class="text-gray-400 font-semibold">Go Back</a>
+      <a href="/" class="p-2 px-4 bg-blue-700 text-white font-semibold rounded-md">Confirm</a>
+    </div> -->
+    
+    
+    <!-- =============option 1 page card (mobile-design-step-1 and Desktop Preview)============ -->
+    <!-- <section class="flex justify-center items-center relative md:w-[75%]">
+      <div class="md:w-full w-[90%] mx-auto">
+        <div class="card bg-white w-[90%] md:w-full rounded-lg h-[min-70vh] absolute -top-20 shadow-xl z-1 md:z-0 md:overflow-y-hidden p-3 md:h-full md:-top-0">
+          <div class="md:w-[60%] md:mx-auto md:mt-10 h-full">
+            <div class="h-[25%] mb-2 md:mb-0 md:flex md:flex-col md:justify-center">
+              <h2 class="font-bold text-xl md:text-2xl">Personal Info</h2>
+              <p class="text-gray-400 font-medium">
+                Please provide your name, email address, and phone number.
+              </p>
+            </div>
+            
+          <div class="h-[70%]">
+            <form class="mb-2 space-y-2 h-full">
+              <label class="block md:mb-3">
+                <span class="text-base font-semibold text-gray-700">Name</span>
+                <div class="border-solid border-2 rounded p-2 md:mb-2">
+                  <input class="w-full focus:outline-none" type="text" placeholder="Ex. Tosin Adewale" required />
+                </div>
+              </label>
+  
+              <label class="block md:mb-4">
+                <span class="text-base font-semibold text-gray-700">Email Address</span>
+                <div class="border-solid border-2 rounded p-2 md:mb-2">
+                  <input class="w-full focus:outline-none" type="email" placeholder="Ex. tosmeltungsten@gmail.com" type="email" required />
+                </div>
+              </label>
+  
+              <label class="block">
+                <span class="text-base font-semibold text-gray-700">Phone Number</span>
+                <div class="border-solid border-2 rounded p-3 md:mb-2">
+                  <input class="w-full focus:outline-none" type="number" placeholder="Ex. +234 806 8957 966" required />
+                </div>
+              </label>
+            </form>
+          </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <div class="paging flex justify-end items-center bg-white absolute bottom-0 right-0 w-full md:w-[75%] p-6 py-8 h-10 md:px-14">
+      <a href="/" class="p-2 px-4 bg-blue-900 text-white font-semibold rounded-md">Next Step</a>
+    </div> -->
+      
+  
+  </main>
+  <!-- <div class="main-container min-h-screen bg-black">
+    <p class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, molestiae?..</p>
+  </div> -->
+
+
+   <!-- <div class="paging flex justify-end items-center bg-white absolute bottom-0 md:w-4/5 w-full p-6 py-10 h-10 md:px-14">
+      <a href="/" class="p-2 px-4 bg-blue-900 text-white font-semibold rounded-md">Next Step</a>
+    </div> -->
+
+    <!-- <div class="paging flex justify-between items-center bg-white absolute bottom-0 w-full p-6 py-10 h-10 md:px-14">
+      <a href="/" class="text-gray-400 font-semibold">Go Back</a>
+      <a href="/" class="p-2 px-4 bg-blue-900 text-white font-semibold rounded-md">Next Step</a>
+    </div> -->
+  
+    <!-- <div class="paging flex justify-between items-center bg-white absolute bottom-0 w-full p-6 py-10 h-10 md:px-14">
+      <a href="/" class="text-gray-400 font-semibold">Go Back</a>
+      <a href="/" class="p-2 px-4 bg-blue-900 text-white font-semibold rounded-md">Next Step</a>
+    </div> -->
+
+
+  <script src="script.js"></script>
+</body>
+</html>
