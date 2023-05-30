@@ -1,4 +1,4 @@
-# Title: Embarking on a Transformative Journey: My Experience with Full-Stack Development and Blockchain Mentorship
+# Title: Embarking on a Transformative Journey; My Experience with Full-Stack Development and Blockchain Mentorship
 
 ## Introduction:
 Embarking on a journey of continuous learning and growth is an essential part of a developer's life. One such journey I undertook was a **Full-Stack Development and Blockchain Development** course, and it has been an incredible experience thus far. In this article, I would like to share my motivations for joining, the challenges that compelled me to take this path, my plans and goals for the course, and my thoughts on the mentor who has been guiding me through this transformative process.
